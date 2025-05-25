@@ -24,7 +24,7 @@ function Navigation() {
                 <Link to='/' className="nav-link active" aria-current="page" href="#">Home</Link>
               </li>
               <li className="nav-item">
-                <Link to='/register' className="nav-link active" aria-current="page" href="#">Register</Link>
+                <Link to='/my-bookings' className="nav-link active" aria-current="page">My Bookings</Link>
               </li>
               <li className="nav-item">
                 <Link to='/adminhomepage' className="nav-link active" aria-current="page" href="#">Admin Home</Link>
