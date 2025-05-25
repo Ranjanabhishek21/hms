@@ -15,15 +15,20 @@ function AdminLoginpage() {
   }
 
   const handleLogin = () => {
-    if(data.name == 'admin' && data.password == '123')
-    alert('Login Successfull');
+    if (data.name == 'admin' && data.password == '123')
+      alert('Login Successfull');
     navigate('/admin');
   }
   return (
     <Fragment>
-      <input type="text" placeholder='username' name='name' onInput={getdata} />
-      <input type="password" placeholder='Password' name='password' />
-      <button onClick={handleLogin}>Admin</button>
+      <div className='main-container'>
+        <div>
+          <h2 className='head'>Admin Login</h2>
+          <input type="text" placeholder='username' name='name' onInput={getdata} />
+          <input type="password" placeholder='Password' name='password' />
+          <button className='btn btn-warning' onClick={handleLogin}>Admin</button>
+        </div>
+      </div>
     </Fragment>
   )
 }

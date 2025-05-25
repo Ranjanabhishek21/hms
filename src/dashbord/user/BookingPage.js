@@ -41,37 +41,43 @@ function BookingPage() {
 
     useEffect(() => {
         getRoomData();
-        if(!mobile){
+        if (!mobile) {
             navigate('/user-login');
         }
     }, [])
 
     return (
         <Fragment>
-            <h1>Booking Page</h1>
-            <div className='row'>
-                <img src={roomData.image} className="card-img-top room-img-size" alt="..." width={300} height={200} />
-                <h3>{roomData.roomname}</h3>
-                <p>{roomData.facilities}</p>
-                <p>{roomData.decription}</p>
-                <p>{roomData.price}</p>
-                <div className='col-md-12'>
-                    <label>Checkin date</label>
-                    <input type='date' onInput={getData} name='checkin' />
-                    <label>Checkout date</label>
-                    <input type='date' onInput={getData} name='checkout' />
-                    <label>Guest</label>
-                    <input type='number' onInput={getData} name='guest' />
-                    <label>Children</label>
-                    <input type='number' onInput={getData} name='children' />
-                    <label> Select no of Rooms</label>
-                    <button onClick={() => setCount(count - 1)}>-</button>
-                    <span>{count}</span>
-                    <button onClick={() => setCount(count + 1)}>+</button>
-                    <button className='btn btn-primary' onClick={createBooking}>Book Now</button>
-
+            <div className='row room-container'>
+            <h2 className='head'>Booking Page</h2>
+                <div className="img_container">
+                  <img src={roomData.image} className="card-img-top room-img-size" alt="..." width={300} height={200} />
+                    <p><b>Room Type:</b> {roomData.roomname}</p>
+                    <p><b>Facilities:</b> {roomData.facilities}</p>
+                    <p><b>Decription:</b> {roomData.decription}</p>
+                    <p><b>Price:</b> {roomData.price}</p>
+                    </div>
+                    <div className='col-md-12 room-page'>
+                        <label>Checkin date</label>
+                        <input type='date' onInput={getData} name='checkin' />
+                        <label>Checkout date</label>
+                        <input type='date' onInput={getData} name='checkout' />
+                        <label>Guest</label>
+                        <input type='number' onInput={getData} name='guest' />
+                        <label>Children</label>
+                        <input type='number' onInput={getData} name='children' />
+                        <label> Select no of Rooms</label>
+                        <div className="btn-design">
+                        <button className='btn btn-warning' onClick={() => setCount(count - 1)}>-</button>
+                        <span>{count}</span>
+                        <button className='btn btn-warning' onClick={() => setCount(count + 1)}>+</button>
+                        </div>
+                        <button className='btn btn-warning' onClick={createBooking}>Book Now</button>
+                   
                 </div>
             </div>
+
+
         </Fragment>
     )
 }

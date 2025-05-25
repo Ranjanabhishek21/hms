@@ -27,9 +27,9 @@ function LoginPage() {
         if (data.otp == otp) {
             localStorage.setItem('mobile', JSON.stringify(data));
             alert('Login Successfull!');
-            navigate(-1);
+            navigate('/roompage');
         } else {
-            alert('Invalid OTP');
+            alert('Please Enter OTP');
         }
     };
 
@@ -41,9 +41,9 @@ function LoginPage() {
         <Fragment>
             <div className='main-container'>
                 <div>
-                    <h2 className='head'>Enter your details</h2>
+                    <h2 className='head'>Enter Your Details</h2>
                     <input type='text' placeholder='Booking Name' name='name' onInput={getdata} />
-                    <input type='number' placeholder='mobile' name='mobile' onInput={getdata} />
+                    <input type='number' placeholder='Mobile' name='mobile' onInput={getdata} />
                     {
                         showinput &&
                         <Fragment>
