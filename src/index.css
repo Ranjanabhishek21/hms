@@ -148,10 +148,10 @@ height: 40px;
  align-items: center;
  text-align: center;
 }
-.table{
+.table-container div table{
   width: 100%;
   padding: 10px;
   margin: 20px;
-  border: 1px solid gray;
-  text-align: center;
+ text-align: center;
+ border: 1px solid gray;
 }

@@ -5,23 +5,26 @@ function MyBookingPage() {
 
   return (
     <Fragment>
-      <div className='main-container'>
+      <div className='table-container'>
         <div>
           <h2 className='head'>My Booking Page</h2>
           <table className="table">
             <thead>
               <tr>
+              <th scope="col">ID</th>
                 <th scope="col">Name</th>
                 <th scope="col">Mobile</th>
                 <th scope="col">Checkin</th>
                 <th scope="col">CheckOut</th>
                 <th scope="col">Guest</th>
                 <th scope="col">Roomname</th>
+                <th scope="col">Status</th>
               </tr>
             </thead>
             <tbody>
-              {data && data.map((item) => (
+              {data && data.map((item, index) => (
                 <tr>
+                  <td>{index + 1}</td>
                   <td>{item.name}</td>
                   <td>{item.mobile}</td>
                   <td>{item.checkin}</td>
