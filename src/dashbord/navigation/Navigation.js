@@ -30,7 +30,7 @@ function Navigation() {
                 <Link to='/adminhomepage' className="nav-link active" aria-current="page" href="#">Admin Home</Link>
               </li>
               <li className="nav-item">
-                <Link to='/adminloginpage' className="nav-link active" aria-current="page" href="#">Admin Login</Link>
+                <Link to='/adminlogin' className="nav-link active" aria-current="page" href="#">Admin Login</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="#">Link</Link>

@@ -1,10 +1,18 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 function LoginPage() {
     const [data, setData] = useState({});
     const [prevdata, setPrevdata] = useState(JSON.parse(localStorage.getItem('userdata')) || []);
     const navigate = useNavigate();
+    const [showinput, setShowinput] = useState(false);
+    const [otp, setOtp] = useState();
+
+    const genotp = () => {
+        const otp = Math.floor(Math.random() * 10000);
+        setOtp(otp);
+        console.log(otp);
+    }
 
     const getdata = (event) => {
         setData({
@@ -15,33 +23,33 @@ function LoginPage() {
     };
 
     const login = () => {
-        const result = prevdata.filter((item) => item.email == data.email);
-        console.log(result);
-        if (result.length > 0) {
-            if (result[0].password == data.password) {
-                alert('Login Successful!');
-                navigate('/home');
-            } else {
-                alert('Invalid Email/Password');
-            }
+        setShowinput(true);
+        if (data.otp == otp) {
+            localStorage.setItem('mobile', JSON.stringify(data));
+            alert('Login Successfull!');
+            navigate(-1);
         } else {
-            alert('You are not Registered, Please Register');
-            navigate('/register');
+            alert('Invalid OTP');
         }
-
-
     };
-    const signup = () => {
-        navigate('/register');
-    }
+
+    useEffect(() => {
+        genotp();
+    }, []);
+
     return (
         <Fragment>
             <div className='main-container'>
                 <div>
-                    <h2 className='head'>Sign In</h2>
-                    <input type='email' placeholder='Email*' name='email' onInput={getdata} />
-                    <input type='password' placeholder='Password*' name='password' onInput={getdata} />
-                    <p class="para">Forgot password? | <span onClick={signup}>Create an account</span></p>
+                    <h2 className='head'>Enter your details</h2>
+                    <input type='text' placeholder='Booking Name' name='name' onInput={getdata} />
+                    <input type='number' placeholder='mobile' name='mobile' onInput={getdata} />
+                    {
+                        showinput &&
+                        <Fragment>
+                            <input type='number' placeholder='Enter OTP' name='otp' onInput={getdata} />
+                        </Fragment>
+                    }
                     <button className='btn btn-warning' onClick={login}>LOGIN</button>
 
                 </div>
