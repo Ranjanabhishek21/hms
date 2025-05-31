@@ -15,9 +15,13 @@ function AdminNavBar() {
                             <li className="nav-item">
                                 <Link className="nav-link active" aria-current="page" to=''>Admin Home</Link>
                             </li>
+                            
                                     <li className="nav-item">
                             <Link className="nav-link" to='/admin/mybookings'>My Booking</Link>
                         </li>
+                        <li className="nav-item">
+                                <Link className="nav-link active" aria-current="page" to='/admin/myroompage'>My Rooms</Link>
+                            </li>
                        
                         </ul>
                     </div>

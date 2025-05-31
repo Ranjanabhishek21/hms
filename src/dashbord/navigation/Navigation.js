@@ -26,10 +26,10 @@ function Navigation() {
               <li className="nav-item">
                 <Link to='/my-bookings' className="nav-link active" aria-current="page">My Booking</Link>
               </li>
-
-              <li className="nav-item">
-                <Link to='/user-login' className="nav-link active" aria-current="page">User Login</Link>
-              </li>
+ {/* 
+//               <li className="nav-item">
+//                 <Link to='/user-login' className="nav-link active" aria-current="page">User Login</Link>
+//               </li> */}
             </ul>
 
             <form className="d-flex">

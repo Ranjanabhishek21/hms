@@ -14,6 +14,8 @@ import MyBookingPage from './dashbord/administrator/MyBookingPage';
 import BookingPage from './dashbord/user/BookingPage';
 import MyBookings from './dashbord/user/MyBookings';
 import RoomPage from './dashbord/user/RoomPage';
+import MyRoomsPage from './dashbord/administrator/MyRoomsPage';
+import RoompageEdit from './dashbord/administrator/RoompageEdit';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -35,6 +37,8 @@ root.render(
         <Route path='/admin' element={<AdminLandingpage />}>
           <Route path='' element={<AdminHomepage />} />
           <Route path='/admin/mybookings' element={<MyBookingPage />} />
+          <Route path='/admin/myroompage' element={<MyRoomsPage />} />
+          <Route path='/admin/roompageedit/:id' element={<RoompageEdit />} />
         </Route>
       </Routes>
     </BrowserRouter>
