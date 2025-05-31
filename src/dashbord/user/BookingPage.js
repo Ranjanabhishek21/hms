@@ -50,14 +50,14 @@ function BookingPage() {
         <Fragment>
             <div className='row room-container'>
                 <h2 className='head'>Booking Page</h2>
-                <div className="img_container">
+                <div className="col-sm-6 col-md-6 col-lg-6 img_container">
                     <img src={roomData.image} className="card-img-top room-img-size" alt="..." width={300} height={200} />
                     <p><b>Room Type:</b> {roomData.roomname}</p>
                     <p><b>Facilities:</b> {roomData.facilities}</p>
                     <p><b>Decription:</b> {roomData.decription}</p>
                     <p><b>Price:</b> {roomData.price}</p>
                 </div>
-                <div className='col-md-12 room-page'>
+                <div className='col-sm-6 col-md-6 col-lg-6 room-page'>
                     <label>Checkin date</label>
                     <input type='date' onInput={getData} name='checkin' />
                     <label>Checkout date</label>
@@ -72,8 +72,11 @@ function BookingPage() {
                         <span>{count}</span>
                         <button className='btn btn-warning' onClick={() => setCount(count + 1)}>+</button>
                     </div>
-                    <button className='btn btn-warning' onClick={createBooking}>Book Now</button>
                 </div>
+                
+            </div>
+            <div className='mybook-button'>
+                <button className='btn btn-warning book-button' onClick={createBooking}>BOOK NOW</button>
             </div>
         </Fragment>
     )

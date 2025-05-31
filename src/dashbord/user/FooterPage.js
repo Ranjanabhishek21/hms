@@ -5,16 +5,24 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 function FooterPage() {
   return (
     <Fragment>
-      <footer className="section section-footer footer">
+      <footer className="section section-footer footer mt2">
         <div className="container">
           <h4 className="mb-4"><span>Hotels in India</span></h4>
           <div class="row align-items-start">
             <div class="col col-sm-6 col-md-6 col-lg-6">
-              <h2 className="subscribe-newsletter__title footer__title">Newsletter</h2>
-              <div class="text-formatted">
+              <h2 className="">Newsletter</h2>
+              <h3 class="footer__title">Follow Us</h3>
+              <ul className="">
+                <li className="list-inline-item">Instagram</li>
+                <li className="list-inline-item">Twitter</li>
+                <li className="list-inline-item">Youtube</li>
+                <li className="list-inline-item">Facebook</li>
+                <li className="list-inline-item">Linkedin</li>
+              </ul>
+              <div className="text-formatted">
                 <p>©2025 The Leela Palaces, Hotels and Resorts. All Rights Reserved.</p></div>
             </div>
-            <div class="col col-sm-3 col-md-3 col-lg-3">
+            <div className="col col-sm-3 col-md-3 col-lg-3">
               <ul className="nav navbar-nav">
                 <li className="list-item">About Us</li>
                 <li className="list-item">Sustainability</li>
@@ -48,31 +56,8 @@ function FooterPage() {
             </div>
           </div>
         </div>
-
-
-        {/* <div className="col-sm-6 col-md-6 col-lg-6 col">
-                <h2 className="subscribe-newsletter__title footer__title">Newsletter</h2>
-              </div>
-              
-              <div className="col-sm-6 col-md-6 col-lg-6 col">
-                <ul className="nav navbar-nav col-sm-3 col-md-3 col-lg-3">
-                  <li className="list-item">About Us</li>
-                </ul>
-               
-                <ul className="nav navbar-nav col-sm-3 col-md-3 col-lg-3 footer-right_table">
-                  <li className="list-item">Gift Card</li>
-                </ul>
-              </div> */}
-
-
-
-
-
-
       </footer>
-
     </Fragment>
-
   )
 }
 

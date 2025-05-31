@@ -14,11 +14,12 @@ function MyBookingPage() {
               <th scope="col">ID</th>
                 <th scope="col">Name</th>
                 <th scope="col">Mobile</th>
-                <th scope="col">Checkin</th>
+                <th scope="col">CheckIn</th>
                 <th scope="col">CheckOut</th>
                 <th scope="col">Guest</th>
-                <th scope="col">Roomname</th>
+                <th scope="col">RoomName</th>
                 <th scope="col">Status</th>
+                <th scope="col">Actions</th>
               </tr>
             </thead>
             <tbody>
@@ -32,6 +33,7 @@ function MyBookingPage() {
                   <td>{item.guest}</td>
                   <td>{item.roomname}</td>
                   <td>{item.status}</td>
+                  <td><button>Confirm</button></td>
                 </tr>
               ))}
             </tbody>

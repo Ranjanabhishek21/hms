@@ -39,14 +39,14 @@ border-radius: 5px;
   outline: none;
     }
 .main-container div button {
-width: 150px;
+width: 200px;
 padding: 6px;
-margin: 10px 10px 20px 120px;
+margin: 10px 10px 20px 100px;
 border:none;
 outline: none;
 font-weight: 600;
 font-size: 20px;
-border-radius: 50px;
+border-radius: 20px;
   }
 
 .img-size {
@@ -54,13 +54,19 @@ border-radius: 50px;
   height: 80vh;
 }
 .room-img-size {
-height: 208px;
+height: 250px;
 }
 .mr {
   margin-right: 10px;
 }
 .mt1 {
   margin-top: 10px;
+ }
+ .mt2 {
+  margin-top: 20px;
+ }
+ .mb1 {
+   margin-bottom: 20px!important;
  }
 
 button a {
@@ -73,6 +79,11 @@ button a {
 }
 .logo-icon {
   width: 70px;
+  margin-bottom: 0px;
+  clear: both;
+}
+.logout-icon {
+  width: 30px;
   margin-bottom: 0px;
   clear: both;
 }
@@ -99,14 +110,12 @@ cursor: pointer;
     margin: 20px;
    }
 .room-container {
-     align-items: center;
-    justify-content: center;
+   justify-content: center;
     }
     
 .room-container div {
     width: 500px;
-    padding: 10px;
-    border-radius: 5px;
+   border-radius: 5px;
     position: relative;
     }
 .room-container div input {
@@ -121,11 +130,10 @@ margin-left: 20px;
 
         }
 .room-container .img_container {
-  margin-top: 0px; 
-          
-                  }
+  margin-top: 10px; 
+}
 .room-container .room-page {
-margin-top: 50px; 
+margin-top: 5px; 
  }
 .room-container div p {
 margin: 5px;
@@ -142,16 +150,20 @@ top: -30px;
 padding: 5px;
 width: 40px;
 height: 40px;
- border-radius: 50px 50px;
+ border-radius: 50px;
 }
 .room-page{
-  float: right;
+ float: right;
   width: 400px;
 }
-.room-page button {
- justify-content: center;
- align-items: center;
- text-align: center;
+.mybook-button .book-button{
+  width: 250px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  margin-left: 550px;
+  padding: 8px;
 }
 .table-container{
   margin: 10px;
@@ -187,9 +199,20 @@ footer {
   font-weight: 400;
 }
 .text-formatted{
-  margin-top: 330px;
+  margin-top: 250px;
 }
 .text-formatted p {
 font-size: 12px;
 font-weight: 600;
+}
+.container-fluid .containter-space {
+  margin: 10px 5px 10px 5px;
+  }
+
+.card-body .card-body-book {
+  margin: 5px auto;
+  padding: 8px;
+  width: 100%;
+  font-weight: 600;
+  border-radius: 20px;
 }

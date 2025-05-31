@@ -10,7 +10,7 @@ function SliderPage() {
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div className="carousel-inner">
-    <div className="carousel-item active">
+    <div className="carousel-item active mb1">
       <img src="https://www.hoteltheroyalplaza.com/images/banner-slider1.jpg" className="d-block w-100 img-size" alt="..." />
     </div>
     <div className="carousel-item">

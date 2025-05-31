@@ -12,14 +12,14 @@ function RoomPage() {
                 <div className='row'>
                     {data && data.map((item) => (
                         <div className='col-lg-3 col-md-3 col-sm-6 col-12'>
-                            <div className="card">
+                            <div className="card containter-space">
                                 <img src={item.image} className="card-img-top room-img-size" alt="..." />
-                                <div className="card-body">
-                                    <h5 className="card-title">{item.roomname}</h5>
-                                    <p className="card-text">{item.facilities}</p>
-                                    <p className="card-text">{item.decription}</p>
-                                    <h5>{item.price}</h5>
-                                    <Link to={`/create-booking/${item.roomname}`} className="btn btn-primary">BOOK NOW</Link>
+                                <div className="card-body card-body-space">
+                                    <h5 className="card-title">Room Name: {item.roomname}</h5>
+                                    <p className="card-text"><b>Facilities:</b> {item.facilities}</p>
+                                    <p className="card-text"><b>Description:</b> {item.decription}</p>
+                                    <h5>Price: {item.price}</h5>
+                                    <Link to={`/create-booking/${item.roomname}`} className="btn btn-warning card-body-book">BOOK NOW</Link>
                                 </div>
                             </div>
                         </div>
