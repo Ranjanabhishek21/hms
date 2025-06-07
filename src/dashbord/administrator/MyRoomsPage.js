@@ -35,10 +35,10 @@ navigate(`/admin/roompageedit/${index}`);
                                     <td>{index + 1}</td>
                                     <td>{item.roomname}</td>
                                     <td>{item.facilities}</td>
-                                    <td>{item.description}</td>
+                                    <td>{item.decription}</td>
                                     <td>{item.price}</td>
-                                    <td><img width="40" height="40" src={item.image} alt="" /></td>
-                                    <td><button className='btn btn-warning book-button' onClick={() => editpage(index)}>EDIT</button></td>
+                                    <td><img width="70" height="40" src={item.image} alt="" /></td>
+                                    <td><button className='btn btn-warning book-button text-bold' onClick={() => editpage(index)}>EDIT</button></td>
                                 </tr>
 
                             ))}

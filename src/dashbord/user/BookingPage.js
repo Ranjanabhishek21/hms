@@ -52,10 +52,10 @@ function BookingPage() {
                 <h2 className='head'>Booking Page</h2>
                 <div className="col-sm-6 col-md-6 col-lg-6 img_container">
                     <img src={roomData.image} className="card-img-top room-img-size" alt="..." width={300} height={200} />
-                    <p><b>Room Type:</b> {roomData.roomname}</p>
-                    <p><b>Facilities:</b> {roomData.facilities}</p>
-                    <p><b>Decription:</b> {roomData.decription}</p>
-                    <p><b>Price:</b> {roomData.price}</p>
+                    <p className="card-text para-text"><b>Room Type:</b> {roomData.roomname}</p>
+                    <p className="card-text para-text"><b>Facilities:</b> {roomData.facilities}</p>
+                    <p className="card-text para-text"><b>Decription:</b> {roomData.decription}</p>
+                    <p className="card-text para-text"><b>Price:</b> {roomData.price}</p>
                 </div>
                 <div className='col-sm-6 col-md-6 col-lg-6 room-page'>
                     <label>Checkin date</label>

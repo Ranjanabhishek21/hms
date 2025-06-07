@@ -26,18 +26,17 @@ function Navigation() {
               <li className="nav-item">
                 <Link to='/my-bookings' className="nav-link active" aria-current="page">My Booking</Link>
               </li>
- {/* 
+              {/* 
 //               <li className="nav-item">
 //                 <Link to='/user-login' className="nav-link active" aria-current="page">User Login</Link>
 //               </li> */}
             </ul>
 
-            <form className="d-flex">
+            <form className="d-flex mr">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item dropdown">
-                  <Link className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img className="logout-icon" src="images/login.png" alt="" /></Link>
+                  <Link className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img className="logout-icon" src="images/login2.jpg" alt="" /></Link>
                   <ul className="dropdown-menu">
-                    <li><Link className="dropdown-item" to="/adminlogin">Admin Login</Link></li>
                     <li><Link className="dropdown-item" to="/user-login">User Login</Link></li>
                     <li><hr className="dropdown-divider" /></li>
                     <li><Link className="dropdown-item">Logout</Link></li>
@@ -45,9 +44,9 @@ function Navigation() {
                 </li>
               </ul>
             </form>
-
-             <button type="button" className="btn btn-warning mr"><Link to='/adminlogin'>Admin Login</Link></button>
-            <button type="button" className="btn btn-warning mr"><Link to=''>Logout</Link></button> 
+            <div className="btn-round">
+              <button type="button" className="btn btn-warning mr text-bold admin-para-text"><Link to='/adminlogin'><span className="admin-para-text">ADMIN LOGIN</span></Link></button>
+            </div>
           </div>
         </div>
       </nav>

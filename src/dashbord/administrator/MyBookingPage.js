@@ -33,7 +33,7 @@ function MyBookingPage() {
                   <td>{item.guest}</td>
                   <td>{item.roomname}</td>
                   <td>{item.status}</td>
-                  <td><button>Confirm</button></td>
+                  <td><button className='btn btn-warning text-bold'>Confirm</button></td>
                 </tr>
               ))}
             </tbody>

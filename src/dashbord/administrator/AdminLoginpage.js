@@ -24,7 +24,7 @@ function AdminLoginpage() {
       <div className='main-container'>
         <div>
           <h2 className='head'>Admin Login</h2>
-          <input type="text" placeholder='username' name='name' onInput={getdata} />
+          <input type="text" placeholder='Name' name='name' onInput={getdata} />
           <input type="password" placeholder='Password' name='password' />
           <button className='btn btn-warning' onClick={handleLogin}>Admin</button>
         </div>

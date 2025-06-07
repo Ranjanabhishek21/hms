@@ -16,9 +16,9 @@ function RoomPage() {
                                 <img src={item.image} className="card-img-top room-img-size" alt="..." />
                                 <div className="card-body card-body-space">
                                     <h5 className="card-title">Room Name: {item.roomname}</h5>
-                                    <p className="card-text"><b>Facilities:</b> {item.facilities}</p>
-                                    <p className="card-text"><b>Description:</b> {item.decription}</p>
-                                    <h5>Price: {item.price}</h5>
+                                    <p className="card-text para-text"><span className="text-bold">Facilities:</span> {item.facilities}</p>
+                                    <p className="card-text para-text"><span className="text-bold">Description:</span> {item.decription}</p>
+                                    <h6>Price: {item.price}</h6>
                                     <Link to={`/create-booking/${item.roomname}`} className="btn btn-warning card-body-book">BOOK NOW</Link>
                                 </div>
                             </div>

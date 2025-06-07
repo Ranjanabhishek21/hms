@@ -12,12 +12,13 @@ function FooterPage() {
             <div class="col col-sm-6 col-md-6 col-lg-6">
               <h2 className="">Newsletter</h2>
               <h3 class="footer__title">Follow Us</h3>
-              <ul className="">
-                <li className="list-inline-item">Instagram</li>
-                <li className="list-inline-item">Twitter</li>
-                <li className="list-inline-item">Youtube</li>
-                <li className="list-inline-item">Facebook</li>
-                <li className="list-inline-item">Linkedin</li>
+              <ul className="list-inline">
+                <li className="list-inline-item"><img src="https://img.icons8.com/?size=50&id=32292&format=png" alt="" /></li>
+                <li className="list-inline-item"><img src="https://img.icons8.com/?size=50&id=437&format=png" alt="" /></li>
+                <li className="list-inline-item"><img src="https://img.icons8.com/?size=50&id=37325&format=png" alt="" /></li>
+                <li className="list-inline-item"><img src="https://img.icons8.com/?size=48&id=VIZ6uI9whmRq&format=png" alt="" /></li>
+                <li className="list-inline-item"><img src="https://img.icons8.com/?size=50&id=447&format=png" alt="" /></li>
+                <li className="list-inline-item"><img src="https://img.icons8.com/?size=50&id=6Fsj3rv2DCmG&format=png" alt="" /></li>
               </ul>
               <div className="text-formatted">
                 <p>©2025 The Leela Palaces, Hotels and Resorts. All Rights Reserved.</p></div>
