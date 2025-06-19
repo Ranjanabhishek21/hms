@@ -1,8 +1,19 @@
 import React, { Fragment, useState } from 'react'
+import { useNavigate } from 'react-router';
 
 function MyBookingPage() {
   const [data, setdata] = useState(JSON.parse(localStorage.getItem('bookingdata')) || []);
+const navigate = useNavigate();
 
+
+const changestatus = (index) => {
+console.log(data[index].status);
+data[index].status = 'confirm';
+console.log(data[index].status);
+localStorage.setItem('bookingdata', JSON.stringify(data));
+navigate('/admin/mybookings');
+
+}
   return (
     <Fragment>
       <div className='table-container'>
@@ -33,7 +44,7 @@ function MyBookingPage() {
                   <td>{item.guest}</td>
                   <td>{item.roomname}</td>
                   <td>{item.status}</td>
-                  <td><button className='btn btn-warning text-bold'>Confirm</button></td>
+                  <td><button className='btn btn-warning text-bold' onClick={() => changestatus(index)}>Confirm</button></td>
                 </tr>
               ))}
             </tbody>

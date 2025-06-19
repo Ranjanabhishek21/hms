@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 function MyBookings() {
   const [data, setdata] = useState(JSON.parse(localStorage.getItem('roomdata')) || []);
+  console.log(data);
   const mobile = JSON.parse(localStorage.getItem('mobile'));
   const navigate = useNavigate();
   const bookingData = JSON.parse(localStorage.getItem('bookingdata')) || [];
@@ -28,6 +29,7 @@ function MyBookings() {
                 <th scope="col">FACILITIES</th>
                 <th scope="col">DESCRIPTION</th>
                 <th scope="col">PRICE</th>
+                <th scope="col">STATUS</th>
               </tr>
             </thead>
             <tbody>
@@ -38,6 +40,7 @@ function MyBookings() {
                   <td>{item.facilities}</td>
                   <td>{item.decription}</td>
                   <td>{item.price}</td>
+                  <td>{item.status}</td>
                 </tr>
               ))}
             </tbody>
